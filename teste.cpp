@@ -60,10 +60,10 @@ int main() {
 
     while (media < 6.0) {
         float novaNota;
-        printf("Média atual: %.2f (menor que 6.0). Digite nova tentativa: ", media);
+        printf("MÃ©dia atual: %.2f (menor que 6.0). Digite nova tentativa: ", media);
         scanf("%f", &novaNota);
 
-        // Substituir a menor nota anterior pela nova
+      
         if (nota1 < nota2)
             nota1 = novaNota;
         else
@@ -74,7 +74,7 @@ int main() {
         tentativasExtras++;
     }
 
-    printf("\nParabéns! Média final: %.2f\n", media);
+    printf("\nParabÃ©ns! MÃ©dia final: %.2f\n", media);
     printf("Total de tentativas extras: %d\n", tentativasExtras);
 
    
@@ -82,10 +82,10 @@ int main() {
     float medianaTodas = calcular_mediana(notas, totalNotas);
     float desvio = calcular_desvio_padrao(notas, totalNotas, mediaTodas);
 
-    printf("\nEstatísticas das notas:\n");
-    printf("Média das notas: %.2f\n", mediaTodas);
+    printf("\nEstatÃ­sticas das notas:\n");
+    printf("MÃ©dia das notas: %.2f\n", mediaTodas);
     printf("Mediana das notas: %.2f\n", medianaTodas);
-    printf("Desvio padrão das notas: %.2f\n", desvio);
+    printf("Desvio padrÃ£o das notas: %.2f\n", desvio);
 
     return 0;
 }
